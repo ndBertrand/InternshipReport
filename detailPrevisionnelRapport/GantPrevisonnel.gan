@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-04-02" view-index="0" gantt-divider-location="494" resource-divider-location="300" version="2.8.8" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-04-01" view-index="0" gantt-divider-location="579" resource-divider-location="300" version="2.8.8" locale="fr">
     <description/>
-    <view zooming-state="default:7" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="232" order="0"/>
-        <field id="tpd4" name="Date de début" width="129" order="1"/>
-        <field id="tpd5" name="Date de fin" width="129" order="2"/>
-        <option id="color.recent"><![CDATA[#ffff00 #339900 #ff0033]]></option>
+    <view zooming-state="default:8" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="312" order="0"/>
+        <field id="tpd4" name="Date de début" width="106" order="1"/>
+        <field id="tpd5" name="Date de fin" width="157" order="2"/>
+        <option id="color.recent"><![CDATA[#ff0033 #e1e1e1 #ffff00 #339900]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Nom" width="210" order="0"/>
@@ -40,28 +40,41 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="projetStage" color="#8cb6ce" meeting="false" start="2018-04-09" duration="65" complete="0" thirdDate="2018-04-09" thirdDate-constraint="0" expand="true">
+        <task id="103" name="debutStage" color="#8cb6ce" meeting="true" start="2018-04-09" duration="0" complete="0" thirdDate="2018-04-02" thirdDate-constraint="0" expand="true">
+            <depend id="0" type="2" difference="0" hardness="Strong"/>
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="0" name="projetStage" color="#ff0033" meeting="false" start="2018-04-09" duration="92" complete="0" thirdDate="2018-04-09" thirdDate-constraint="0" expand="true">
             <task id="5" name="multipass_phase1" color="#ffff00" meeting="false" start="2018-04-09" duration="25" complete="0" thirdDate="2018-04-09" thirdDate-constraint="0" expand="true">
                 <depend id="7" type="2" difference="0" hardness="Strong"/>
-                <depend id="8" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="7" name="operose" color="#339900" meeting="false" start="2018-05-17" duration="22" complete="0" thirdDate="2018-05-17" thirdDate-constraint="0" expand="true">
+            <task id="7" name="operose" color="#339900" meeting="false" start="2018-05-17" duration="35" complete="0" thirdDate="2018-05-17" thirdDate-constraint="0" expand="true">
                 <depend id="8" type="2" difference="0" hardness="Strong"/>
-                <task id="10" name="étude_préalable" color="#339900" meeting="false" start="2018-05-17" duration="5" complete="0" thirdDate="2018-05-17" thirdDate-constraint="0" expand="true"/>
-                <task id="11" name="étude_detaillée" color="#339900" meeting="false" start="2018-05-17" duration="7" complete="0" thirdDate="2018-05-17" thirdDate-constraint="0" expand="true">
+                <task id="10" name="étude_préalable" color="#339900" meeting="false" start="2018-05-17" duration="10" complete="0" thirdDate="2018-05-17" thirdDate-constraint="0" priority="0" expand="true"/>
+                <task id="11" name="étude_detaillée" color="#339900" meeting="false" start="2018-05-17" duration="10" complete="0" thirdDate="2018-05-17" thirdDate-constraint="0" expand="true">
                     <depend id="12" type="2" difference="0" hardness="Strong"/>
                     <depend id="71" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="12" name="réalisation" color="#339900" meeting="false" start="2018-05-29" duration="10" complete="0" thirdDate="2018-05-29" thirdDate-constraint="0" expand="true">
+                <task id="12" name="réalisation" color="#339900" meeting="false" start="2018-06-01" duration="10" complete="0" thirdDate="2018-05-29" thirdDate-constraint="0" expand="true">
                     <depend id="13" type="2" difference="0" hardness="Strong"/>
                     <depend id="73" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="13" name="mise_en_oeuvre de la solution" color="#339900" meeting="false" start="2018-06-12" duration="5" complete="0" thirdDate="2018-06-12" thirdDate-constraint="0" expand="true"/>
+                <task id="13" name="mise_en_oeuvre de la solution" color="#339900" meeting="false" start="2018-06-15" duration="15" complete="0" thirdDate="2018-06-12" thirdDate-constraint="0" expand="true"/>
             </task>
-            <task id="8" name="multipass_phase2" color="#ffff00" meeting="false" start="2018-06-19" duration="18" complete="0" thirdDate="2018-05-17" thirdDate-constraint="0" expand="true"/>
-            <task id="71" name="journée_stagiaire_irstea" color="#8cb6ce" meeting="true" start="2018-05-29" duration="0" complete="0" thirdDate="2018-05-11" thirdDate-constraint="0" expand="true"/>
-            <task id="73" name="rdv_tuteur_academique" color="#8cb6ce" meeting="true" start="2018-06-12" duration="0" complete="0" thirdDate="2018-06-21" thirdDate-constraint="0" expand="true"/>
+            <task id="8" name="multipass_phase2" color="#ffff00" meeting="false" start="2018-07-06" duration="18" complete="0" thirdDate="2018-06-19" thirdDate-constraint="0" expand="true">
+                <depend id="106" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="71" name="journée_stagiaire_irstea" color="#8cb6ce" meeting="true" start="2018-06-01" duration="0" complete="0" thirdDate="2018-05-29" thirdDate-constraint="0" expand="true"/>
+            <task id="73" name="rdv_tuteur_academique" color="#8cb6ce" meeting="true" start="2018-06-15" duration="0" complete="0" thirdDate="2018-06-12" thirdDate-constraint="0" expand="true"/>
+            <task id="76" name="plan_detaillé_provisionnel" color="#8cb6ce" meeting="false" start="2018-05-28" duration="5" complete="0" thirdDate="2018-04-02" thirdDate-constraint="0" expand="true"/>
+            <task id="77" name="remiseRapport" color="#8cb6ce" meeting="true" start="2018-08-22" duration="0" complete="0" thirdDate="2018-08-22" thirdDate-constraint="0" expand="true"/>
+            <task id="87" name="rapport_stage" color="#8cb6ce" meeting="false" start="2018-06-01" duration="53" complete="0" thirdDate="2018-08-01" thirdDate-constraint="0" expand="true">
+                <depend id="106" type="2" difference="0" hardness="Strong"/>
+                <task id="102" name="redaction" color="#8cb6ce" meeting="false" start="2018-06-01" duration="40" complete="0" thirdDate="2018-03-01" thirdDate-constraint="0" expand="true"/>
+                <task id="95" name="relecture" color="#8cb6ce" meeting="false" start="2018-08-01" duration="10" complete="0" thirdDate="2018-08-01" thirdDate-constraint="0" expand="true"/>
+            </task>
         </task>
+        <task id="106" name="FinStage" color="#8cb6ce" meeting="true" start="2018-08-16" duration="0" complete="0" thirdDate="2018-04-02" thirdDate-constraint="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>

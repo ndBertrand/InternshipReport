@@ -1,0 +1,11 @@
+- Analyse de l'existant : analyse de la situation existante et des besoins
+-- Recuil de documents : 
+--- Conception d'un cahier de charge
+--- Consultations de documents existant
+--- extraction d'informations élémentaires
+--- choix de la terminologie
+--- préparation de l'intégration avec les autres systèmes
+- Création d'un modèle conceptuel : présentation des aspect important du problème
+--Abstraction des données
+- traduction : passage de modèle conceptuel en modèle logique
+- implémentation : création d'une base de données à partir du modèle logique
