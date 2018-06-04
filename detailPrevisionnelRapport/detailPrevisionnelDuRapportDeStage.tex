@@ -4,6 +4,7 @@
 \renewcommand{\thechapter}{}
 \renewcommand{\thesection}{}
 \usepackage[left=5cm, right=3cm]{geometry}
+\usepackage{pdfpages}
 
 \makeatletter
 \title{Détail prévisionnel du rapport de stage} \let\Title\@title
@@ -25,5 +26,12 @@
 \input{ObjectifsEtatAvancement}
 
 \input{diagrameGrant}
+
+ \centering 
+ \includepdf[pages={1-4}]{GantPrevisonnel.pdf}
+ \includepdf[pages=2]{GantPrevisonnel.pdf}
+ \includepdf[pages=3]{GantPrevisonnel.pdf}
+ \includepdf[pages=4]{GantPrevisonnel.pdf}
+
 
 \end{document}          
