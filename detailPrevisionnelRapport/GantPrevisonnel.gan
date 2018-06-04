@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-04-01" view-index="0" gantt-divider-location="579" resource-divider-location="300" version="2.8.8" locale="fr">
-    <description/>
+<?xml version="1.0" encoding="UTF-8"?><project name="Diagrame provisionnel de projet de stage" company="Institut national de recherche en sciences et technologies pour l'environnement et l'agriculture" webLink="http://www.irstea.fr/accueil" view-date="2018-04-01" view-index="0" gantt-divider-location="436" resource-divider-location="300" version="2.8.8" locale="fr">
+    <description><![CDATA[Diagramme de gantt décrivant les différentes étapes et tâches ainsi que leurs états d'avancement respectifs qui composent mon projet de stage au sein de l'Irstea.]]></description>
     <view zooming-state="default:8" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="312" order="0"/>
-        <field id="tpd4" name="Date de début" width="106" order="1"/>
-        <field id="tpd5" name="Date de fin" width="157" order="2"/>
-        <option id="color.recent"><![CDATA[#ff0033 #e1e1e1 #ffff00 #339900]]></option>
+        <field id="tpd3" name="Nom" width="232" order="0"/>
+        <field id="tpd4" name="Date de début" width="81" order="1"/>
+        <field id="tpd5" name="Date de fin" width="119" order="2"/>
+        <option id="color.recent"><![CDATA[#339900 #ffff00 #33ff00 #ff0033 #e1e1e1]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Nom" width="210" order="0"/>
@@ -26,6 +26,11 @@
         <date year="2018" month="5" date="21" type="HOLIDAY"><![CDATA[Lundi de pentecôte]]></date>
         <date year="2018" month="7" date="14" type="HOLIDAY"><![CDATA[Fête nationale]]></date>
         <date year="2018" month="8" date="15" type="HOLIDAY"><![CDATA[Assomption]]></date>
+        <date year="2018" month="8" date="16" type="HOLIDAY" color="#33ff00"><![CDATA[congé]]></date>
+        <date year="2018" month="8" date="17" type="HOLIDAY" color="#33ff00"><![CDATA[congé]]></date>
+        <date year="2018" month="7" date="16" type="HOLIDAY" color="#33ff00"/>
+        <date year="2018" month="7" date="17" type="HOLIDAY" color="#33ff00"/>
+        <date year="2018" month="7" date="18" type="HOLIDAY" color="#33ff00"/>
     </calendars>
     <tasks empty-milestones="true">
         <taskproperties>
@@ -44,41 +49,73 @@
             <depend id="0" type="2" difference="0" hardness="Strong"/>
             <depend id="5" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="0" name="projetStage" color="#ff0033" meeting="false" start="2018-04-09" duration="92" complete="0" thirdDate="2018-04-09" thirdDate-constraint="0" expand="true">
-            <task id="5" name="multipass_phase1" color="#ffff00" meeting="false" start="2018-04-09" duration="25" complete="0" thirdDate="2018-04-09" thirdDate-constraint="0" expand="true">
+        <task id="0" name="projetStage" color="#ff0033" meeting="false" start="2018-04-09" duration="102" complete="27" thirdDate="2018-04-09" thirdDate-constraint="0" expand="true">
+            <task id="5" name="projet multipass phase1" color="#ffff00" meeting="false" start="2018-04-09" duration="35" complete="98" thirdDate="2018-04-09" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[première partie du projet Multipasse,
+Danc cette partie, il faut faire une étude sur l'anonymisation des données]]></notes>
                 <depend id="7" type="2" difference="0" hardness="Strong"/>
+                <task id="118" name="documentation" color="#ffff00" meeting="false" start="2018-04-09" duration="10" complete="100" thirdDate="2018-04-09" thirdDate-constraint="0" expand="true">
+                    <depend id="121" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="121" name="redaction" color="#ffff00" meeting="false" start="2018-04-23" duration="20" complete="100" thirdDate="2018-04-23" thirdDate-constraint="0" expand="true">
+                    <depend id="127" type="2" difference="0" hardness="Strong"/>
+                    <depend id="152" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="127" name="review" color="#ffff00" meeting="false" start="2018-05-25" duration="5" complete="90" thirdDate="2018-05-25" thirdDate-constraint="0" expand="true"/>
             </task>
-            <task id="7" name="operose" color="#339900" meeting="false" start="2018-05-17" duration="35" complete="0" thirdDate="2018-05-17" thirdDate-constraint="0" expand="true">
+            <task id="7" name="projet operose" color="#339900" meeting="false" start="2018-06-01" duration="47" complete="24" thirdDate="2018-05-25" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[Partie projet OPEROSE
+Dans cette partie, il s'agit de modéliser et développer une base de données météorologique.]]></notes>
                 <depend id="8" type="2" difference="0" hardness="Strong"/>
-                <task id="10" name="étude_préalable" color="#339900" meeting="false" start="2018-05-17" duration="10" complete="0" thirdDate="2018-05-17" thirdDate-constraint="0" priority="0" expand="true"/>
-                <task id="11" name="étude_detaillée" color="#339900" meeting="false" start="2018-05-17" duration="10" complete="0" thirdDate="2018-05-17" thirdDate-constraint="0" expand="true">
+                <task id="10" name="étude_préalable" color="#339900" meeting="false" start="2018-06-01" duration="10" complete="100" thirdDate="2018-05-25" thirdDate-constraint="0" priority="0" expand="true"/>
+                <task id="11" name="étude_detaillée" color="#339900" meeting="false" start="2018-06-01" duration="10" complete="80" thirdDate="2018-05-25" thirdDate-constraint="0" expand="true">
                     <depend id="12" type="2" difference="0" hardness="Strong"/>
                     <depend id="71" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="12" name="réalisation" color="#339900" meeting="false" start="2018-06-01" duration="10" complete="0" thirdDate="2018-05-29" thirdDate-constraint="0" expand="true">
+                <task id="12" name="réalisation" color="#339900" meeting="false" start="2018-06-15" duration="12" complete="10" thirdDate="2018-06-15" thirdDate-constraint="0" expand="true">
                     <depend id="13" type="2" difference="0" hardness="Strong"/>
                     <depend id="73" type="2" difference="0" hardness="Strong"/>
+                    <depend id="205" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="13" name="mise_en_oeuvre de la solution" color="#339900" meeting="false" start="2018-06-15" duration="15" complete="0" thirdDate="2018-06-12" thirdDate-constraint="0" expand="true"/>
+                <task id="13" name="mise_en_oeuvre de la solution" color="#339900" meeting="false" start="2018-07-03" duration="15" complete="0" thirdDate="2018-06-12" thirdDate-constraint="0" expand="true">
+                    <depend id="108" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="108" name="phase de test" color="#339900" meeting="false" start="2018-07-27" duration="10" complete="0" thirdDate="2018-07-13" thirdDate-constraint="0" expand="true"/>
+                <task id="205" name="faire une documentation" color="#339900" meeting="false" start="2018-07-03" duration="20" complete="0" thirdDate="2018-06-22" thirdDate-constraint="0" expand="true"/>
             </task>
-            <task id="8" name="multipass_phase2" color="#ffff00" meeting="false" start="2018-07-06" duration="18" complete="0" thirdDate="2018-06-19" thirdDate-constraint="0" expand="true">
+            <task id="8" name="projet multipass phase2" color="#ffff00" meeting="false" start="2018-08-20" duration="17" complete="0" thirdDate="2018-08-01" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[Deuxième partie du projet MULTIPASS
+Dans cette partie, nous testerons les différentes techniques vues dans la première partie sur des jeux de données]]></notes>
                 <depend id="106" type="2" difference="0" hardness="Strong"/>
+                <task id="178" name="test sur jeu de données" color="#ffff00" meeting="false" start="2018-08-20" duration="17" complete="0" thirdDate="2018-08-20" thirdDate-constraint="0" expand="true"/>
             </task>
-            <task id="71" name="journée_stagiaire_irstea" color="#8cb6ce" meeting="true" start="2018-06-01" duration="0" complete="0" thirdDate="2018-05-29" thirdDate-constraint="0" expand="true"/>
-            <task id="73" name="rdv_tuteur_academique" color="#8cb6ce" meeting="true" start="2018-06-15" duration="0" complete="0" thirdDate="2018-06-12" thirdDate-constraint="0" expand="true"/>
-            <task id="76" name="plan_detaillé_provisionnel" color="#8cb6ce" meeting="false" start="2018-05-28" duration="5" complete="0" thirdDate="2018-04-02" thirdDate-constraint="0" expand="true"/>
-            <task id="77" name="remiseRapport" color="#8cb6ce" meeting="true" start="2018-08-22" duration="0" complete="0" thirdDate="2018-08-22" thirdDate-constraint="0" expand="true"/>
-            <task id="87" name="rapport_stage" color="#8cb6ce" meeting="false" start="2018-06-01" duration="53" complete="0" thirdDate="2018-08-01" thirdDate-constraint="0" expand="true">
+            <task id="71" name="journée stagiaire irstea" color="#8cb6ce" meeting="true" start="2018-06-15" duration="0" complete="0" thirdDate="2018-06-08" thirdDate-constraint="0" priority="2" expand="true"/>
+            <task id="73" name="rdv_tuteur_academique" color="#8cb6ce" meeting="true" start="2018-07-03" duration="0" complete="0" thirdDate="2018-06-12" thirdDate-constraint="0" expand="true"/>
+            <task id="76" name="plan_detaillé_provisionnel" color="#8cb6ce" meeting="false" start="2018-05-28" duration="5" complete="0" thirdDate="2018-05-28" thirdDate-constraint="0" priority="2" expand="true">
+                <depend id="144" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="77" name="remiseRapport" color="#8cb6ce" meeting="true" start="2018-08-22" duration="0" complete="0" thirdDate="2018-08-22" thirdDate-constraint="0" priority="4" expand="true"/>
+            <task id="87" name="rédaction rapport stage" color="#8cb6ce" meeting="false" start="2018-06-04" duration="59" complete="1" thirdDate="2018-06-04" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[toute la rédaction du rapport de stage]]></notes>
                 <depend id="106" type="2" difference="0" hardness="Strong"/>
-                <task id="102" name="redaction" color="#8cb6ce" meeting="false" start="2018-06-01" duration="40" complete="0" thirdDate="2018-03-01" thirdDate-constraint="0" expand="true"/>
-                <task id="95" name="relecture" color="#8cb6ce" meeting="false" start="2018-08-01" duration="10" complete="0" thirdDate="2018-08-01" thirdDate-constraint="0" expand="true"/>
+                <task id="144" name="stucture" color="#8cb6ce" meeting="false" start="2018-06-04" duration="1" complete="75" thirdDate="2018-06-04" thirdDate-constraint="0" expand="true">
+                    <depend id="102" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="102" name="redaction" color="#8cb6ce" meeting="false" start="2018-06-05" duration="40" complete="0" thirdDate="2018-06-01" thirdDate-constraint="0" expand="true"/>
+                <task id="152" name="correction" color="#8cb6ce" meeting="false" start="2018-08-20" duration="10" complete="0" thirdDate="2018-08-16" thirdDate-constraint="0" expand="true"/>
+                <task id="95" name="relecture" color="#8cb6ce" meeting="false" start="2018-08-01" duration="10" complete="0" thirdDate="2018-08-01" thirdDate-constraint="0" expand="true">
+                    <depend id="152" type="2" difference="0" hardness="Strong"/>
+                </task>
             </task>
         </task>
-        <task id="106" name="FinStage" color="#8cb6ce" meeting="true" start="2018-08-16" duration="0" complete="0" thirdDate="2018-04-02" thirdDate-constraint="0" expand="true"/>
+        <task id="106" name="FinStage" color="#8cb6ce" meeting="true" start="2018-09-12" duration="0" complete="0" thirdDate="2018-09-03" thirdDate-constraint="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
     <vacations/>
     <previous/>
     <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Bertrand NDAYISENGA"/>
+    </roles>
 </project>
