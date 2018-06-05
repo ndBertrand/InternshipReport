@@ -1,5 +1,21 @@
+%%%% debut macro %%%%
+\newenvironment{changemargin}[2]{\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{0pt}%
+\setlength{\rightmargin}{0pt}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{0pt plus 1pt}%
+\addtolength{\leftmargin}{#1}%
+\addtolength{\rightmargin}{#2}%
+}\item }{\end{list}}
+%%%% fin macro %%%%
+\begin{changemargin}{-4cm}{-2cm}
 \newcommand{\HRule}{\rule[2mm]{10mm}{0.5mm}}
-
+\includegraphics[height=50px]{detailPrevisionnelRapport/Logo-Irstea.png}
+\hspace*{\fill}
+\includegraphics[height=50px]{detailPrevisionnelRapport/Logo-UCA.png}
+\\[1cm]
 \begin{center}
     \textsc{\large Université Clermont Auvergne}\\[0.5mm]
     \HRule \textsc{ Institut d'Informatique} \HRule 
@@ -32,5 +48,5 @@
 
     Année Académique : \@date
 \end{center}
-
+\end{changemargin}
 
