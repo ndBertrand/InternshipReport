@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Diagrame provisionnel de projet de stage" company="Institut national de recherche en sciences et technologies pour l'environnement et l'agriculture" webLink="http://www.irstea.fr/accueil" view-date="2018-04-01" view-index="0" gantt-divider-location="436" resource-divider-location="300" version="2.8.8" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Diagramme provisionnel de projet de stage" company="Institut national de recherche en sciences et technologies pour l'environnement et l'agriculture" webLink="http://www.irstea.fr/accueil" view-date="2018-04-01" view-index="0" gantt-divider-location="436" resource-divider-location="300" version="2.8.8" locale="fr">
     <description><![CDATA[Diagramme de gantt décrivant les différentes étapes et tâches ainsi que leurs états d'avancement respectifs qui composent mon projet de stage au sein de l'Irstea.]]></description>
     <view zooming-state="default:8" id="gantt-chart">
         <field id="tpd3" name="Nom" width="232" order="0"/>
@@ -102,7 +102,7 @@ Dans cette partie, nous testerons les différentes techniques vues dans la premi
                     <depend id="102" type="2" difference="0" hardness="Strong"/>
                 </task>
                 <task id="102" name="redaction" color="#8cb6ce" meeting="false" start="2018-06-05" duration="40" complete="0" thirdDate="2018-06-01" thirdDate-constraint="0" expand="true"/>
-                <task id="152" name="correction" color="#8cb6ce" meeting="false" start="2018-08-20" duration="10" complete="0" thirdDate="2018-08-16" thirdDate-constraint="0" expand="true"/>
+                <task id="152" name="correction" color="#8cb6ce" meeting="false" start="2018-08-20" duration="10" complete="0" thirdDate="2018-08-20" thirdDate-constraint="0" expand="true"/>
                 <task id="95" name="relecture" color="#8cb6ce" meeting="false" start="2018-08-01" duration="10" complete="0" thirdDate="2018-08-01" thirdDate-constraint="0" expand="true">
                     <depend id="152" type="2" difference="0" hardness="Strong"/>
                 </task>
@@ -110,7 +110,9 @@ Dans cette partie, nous testerons les différentes techniques vues dans la premi
         </task>
         <task id="106" name="FinStage" color="#8cb6ce" meeting="true" start="2018-09-12" duration="0" complete="0" thirdDate="2018-09-03" thirdDate-constraint="0" expand="true"/>
     </tasks>
-    <resources/>
+    <resources>
+        <resource id="0" name="Bertrand NDAYISENGA" function="Default:1" contacts="bertrandndayisenga@gmail.com" phone=""/>
+    </resources>
     <allocations/>
     <vacations/>
     <previous/>
