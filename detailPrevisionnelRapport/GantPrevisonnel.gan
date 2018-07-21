@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Diagramme provisionnel de projet de stage" company="Institut national de recherche en sciences et technologies pour l'environnement et l'agriculture" webLink="http://www.irstea.fr/accueil" view-date="2018-04-01" view-index="0" gantt-divider-location="436" resource-divider-location="300" version="2.8.8" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Diagramme prévisionnel de projet de stage" company="Institut national de recherche en sciences et technologies pour l'environnement et l'agriculture" webLink="http://www.irstea.fr/accueil" view-date="2018-04-01" view-index="0" gantt-divider-location="436" resource-divider-location="300" version="2.8.8" locale="fr">
     <description><![CDATA[Diagramme de gantt décrivant les différentes étapes et tâches ainsi que leurs états d'avancement respectifs qui composent mon projet de stage au sein de l'Irstea.]]></description>
     <view zooming-state="default:8" id="gantt-chart">
         <field id="tpd3" name="Nom" width="232" order="0"/>
